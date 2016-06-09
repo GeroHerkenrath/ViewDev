@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iY-TZ-P33" userLabel="Background Color">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.25051185344827587" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-ze-7tq" userLabel="Container For Testing View">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cq8-sr-qXl" userLabel="Zoom X">
+                                <rect key="frame" x="18" y="28" width="564" height="31"/>
+                                <connections>
+                                    <action selector="changeConstraint:" destination="BYZ-38-t0r" eventType="valueChanged" id="ssO-rb-N4g"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cok-yI-vpc" userLabel="Zoom Y">
+                                <rect key="frame" x="18" y="562" width="564" height="31"/>
+                                <connections>
+                                    <action selector="changeConstraint:" destination="BYZ-38-t0r" eventType="valueChanged" id="O2o-58-OUM"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dNN-ze-7tq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2i3-PY-zq4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cok-yI-vpc" secondAttribute="bottom" constant="8" id="FeO-nd-qI2"/>
+                            <constraint firstItem="Cq8-sr-qXl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JMD-0a-ImY"/>
+                            <constraint firstItem="dNN-ze-7tq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="QSJ-9E-RFP"/>
+                            <constraint firstItem="dNN-ze-7tq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qun-L1-YhY"/>
+                            <constraint firstItem="dNN-ze-7tq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Xny-R8-yhi"/>
+                            <constraint firstItem="1iY-TZ-P33" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ctr-Uf-dEG"/>
+                            <constraint firstItem="cok-yI-vpc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dpb-S1-5sh"/>
+                            <constraint firstItem="Cq8-sr-qXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eXH-TG-l9z"/>
+                            <constraint firstItem="cok-yI-vpc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jnQ-Za-4ZS"/>
+                            <constraint firstItem="1iY-TZ-P33" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="qDp-aG-Fdr"/>
+                            <constraint firstAttribute="trailing" secondItem="1iY-TZ-P33" secondAttribute="trailing" id="wSp-dg-y19"/>
+                            <constraint firstItem="Cq8-sr-qXl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y1a-Km-52y"/>
+                            <constraint firstItem="1iY-TZ-P33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zEd-XU-hk9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="dNN-ze-7tq" id="87B-vu-w5f"/>
+                        <outlet property="heightConstraint" destination="Xny-R8-yhi" id="4lm-Cg-4hB"/>
+                        <outlet property="widthConstraint" destination="QSJ-9E-RFP" id="kah-1x-kqy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="399"/>
+        </scene>
+    </scenes>
+</document>
