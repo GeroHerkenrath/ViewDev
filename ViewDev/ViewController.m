@@ -70,8 +70,8 @@
 																	 attribute:attribute
 																	multiplier:newMultiplier
 																	  constant:0.0];
-	[self.view removeConstraint:oldConstraint];
-	[self.view addConstraint:newConstraint];
+	oldConstraint.active = NO;
+	newConstraint.active = YES;
 	if (attribute == NSLayoutAttributeWidth) {
 		self.widthConstraint = newConstraint;
 	} else {

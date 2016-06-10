@@ -19,8 +19,8 @@
 /* Begin PBXFileReference section */
 		1D263EB11D098E8900D1D478 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		1D263EB21D098E8900D1D478 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		1D744E2E1D0983AC0075DD37 /* ViewToTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewToTest.h; path = ../ViewsToTest/ViewToTest.h; sourceTree = "<group>"; };
-		1D744E2F1D0983AC0075DD37 /* ViewToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewToTest.m; path = ../ViewsToTest/ViewToTest.m; sourceTree = "<group>"; };
+		1D744E2E1D0983AC0075DD37 /* ViewToTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewToTest.h; path = ViewDev/ViewsToTest/ViewToTest.h; sourceTree = "<group>"; };
+		1D744E2F1D0983AC0075DD37 /* ViewToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewToTest.m; path = ViewDev/ViewsToTest/ViewToTest.m; sourceTree = "<group>"; };
 		1D8B57081D08606F00615DE0 /* ViewDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8B570C1D08606F00615DE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D8B570E1D08606F00615DE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };

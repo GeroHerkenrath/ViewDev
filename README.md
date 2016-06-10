@@ -12,6 +12,13 @@ That's usually easier than fiddling with a large existing project.
 
 2. Either instantiate your view programmatically in the `viewDidLoad` method of the provided `ViewController.m` class or add it in interface builder (if you're using IB_DESIGNABLE).
 
+The template is probably not absolutely complete, but it helps finding problems with your design.
+Note that I use autolayout constraints to resize the container view. Depending on how you add your view this can lead to autolayout
+warnings etc. For example: If your view uses constraints internally to layout its subviews and those define a ninimum width
+or height, but you then also use constraints to resize it with the containerView in the template, you might get errors.
+This isn't necessarily a problem (the app doesn't crash, it simply breaks one of the problematic constraints during runtime), 
+but keep in mind that third party coders might run into similar issues then.
+
 ### Repository notes ###
 
 To prevent me from accidentally checking in the views to test in this repo, the entire `Views to Test` folder is ignored 
