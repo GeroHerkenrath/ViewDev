@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D744E301D0983AC0075DD37 /* ViewToTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D744E2F1D0983AC0075DD37 /* ViewToTest.m */; };
 		1D8B570D1D08606F00615DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B570C1D08606F00615DE0 /* main.m */; };
 		1D8B57101D08606F00615DE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B570F1D08606F00615DE0 /* AppDelegate.m */; };
 		1D8B57131D08606F00615DE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B57121D08606F00615DE0 /* ViewController.m */; };
 		1D8B57161D08606F00615DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B57141D08606F00615DE0 /* Main.storyboard */; };
 		1D8B57181D08606F00615DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B57171D08606F00615DE0 /* Assets.xcassets */; };
 		1D8B571B1D08606F00615DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B57191D08606F00615DE0 /* LaunchScreen.storyboard */; };
+		1DA3F7441D0AB1BC00601732 /* ViewToTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3F7431D0AB1BC00601732 /* ViewToTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D263EB11D098E8900D1D478 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		1D263EB21D098E8900D1D478 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		1D744E2E1D0983AC0075DD37 /* ViewToTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewToTest.h; path = ViewDev/ViewsToTest/ViewToTest.h; sourceTree = "<group>"; };
-		1D744E2F1D0983AC0075DD37 /* ViewToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewToTest.m; path = ViewDev/ViewsToTest/ViewToTest.m; sourceTree = "<group>"; };
 		1D8B57081D08606F00615DE0 /* ViewDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8B570C1D08606F00615DE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D8B570E1D08606F00615DE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +29,8 @@
 		1D8B57171D08606F00615DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D8B571A1D08606F00615DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D8B571C1D08606F00615DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA3F7421D0AB1BC00601732 /* ViewToTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewToTest.h; sourceTree = "<group>"; };
+		1DA3F7431D0AB1BC00601732 /* ViewToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewToTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +56,10 @@
 		1D744E1B1D0974480075DD37 /* ViewsToTest */ = {
 			isa = PBXGroup;
 			children = (
-				1D744E2E1D0983AC0075DD37 /* ViewToTest.h */,
-				1D744E2F1D0983AC0075DD37 /* ViewToTest.m */,
+				1DA3F7421D0AB1BC00601732 /* ViewToTest.h */,
+				1DA3F7431D0AB1BC00601732 /* ViewToTest.m */,
 			);
-			name = ViewsToTest;
-			path = "Views to Test";
+			path = ViewsToTest;
 			sourceTree = "<group>";
 		};
 		1D8B56FF1D08606F00615DE0 = {
@@ -176,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8B57131D08606F00615DE0 /* ViewController.m in Sources */,
-				1D744E301D0983AC0075DD37 /* ViewToTest.m in Sources */,
+				1DA3F7441D0AB1BC00601732 /* ViewToTest.m in Sources */,
 				1D8B57101D08606F00615DE0 /* AppDelegate.m in Sources */,
 				1D8B570D1D08606F00615DE0 /* main.m in Sources */,
 			);
